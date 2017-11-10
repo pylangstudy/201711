@@ -54,7 +54,7 @@ os.fsencode(filename)|Encode path-like filename to the filesystem encoding with 
 os.fsdecode(filename)|Decode the path-like filename from the filesystem encoding with 'surrogateescape' error handler, or 'strict' on Windows; return str unchanged.
 os.fspath(path)|path のファイルシステム表現を返します。
 class os.PathLike|ファイルシステムパスを表すオブジェクト(例: pathlib.PurePath) 向けの abstract base class です。
-    abstractmethod __fspath__()|    このオブジェクトが表現するファイルシステムパスを返します。
+abstractmethod __fspath__()|このオブジェクトが表現するファイルシステムパスを返します。
 os.getenv(key, default=None)|環境変数 key が存在すればその値を返し、存在しなければ default を返します。key、default、および返り値は文字列です。
 os.getenvb(key, default=None)|環境変数 key が存在すればその値を返し、存在しなければ default を返します。key、default、および返り値はバイト列型です。
 os.get_exec_path(env=None)|プロセスを起動する時に名前付き実行ファイルを検索するディレクトリのリストを返します。 env が指定されると、それを環境変数の辞書とみなし、その辞書からキー PATH の値を探します。 デフォルトでは env は None であり、environ が使用されます。
