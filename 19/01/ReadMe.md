@@ -42,7 +42,7 @@ args = parser.parse_args()
 
 > このプログラムのヘルプは、プログラム名として (プログラムがどこから起動されたのかに関わらず) myprogram.py を表示します:
 
-```python
+```sh
 $ python myprogram.py --help
 usage: myprogram.py [-h] [--foo FOO]
 

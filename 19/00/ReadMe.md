@@ -29,7 +29,7 @@ print(args.accumulate(args.integers))
 上の Python コードが prog.py という名前のファイルに保存されたと仮定します。コマンドラインから便利なヘルプメッセージを表示できます:
 
 
-```python
+```sh
 $ python prog.py -h
 usage: prog.py [-h] [--sum] N [N ...]
 
@@ -45,7 +45,7 @@ optional arguments:
 
 > 適切な引数を与えて実行した場合、このプログラムはコマンドライン引数の整数列の合計か最大値を表示します:
 
-```python
+```sh
 $ python prog.py 1 2 3 4
 4
 
@@ -55,7 +55,7 @@ $ python prog.py 1 2 3 4 --sum
 
 > 不正な引数が与えられた場合、エラーを発生させます:
 
-```python
+```sh
 $ python prog.py a b c
 usage: prog.py [-h] [--sum] N [N ...]
 prog.py: error: argument N: invalid int value: 'a'
