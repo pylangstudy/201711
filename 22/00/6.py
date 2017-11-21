@@ -1,0 +1,9 @@
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument('--raw', type=argparse.FileType('wb', 0))
+parser.add_argument('out', type=argparse.FileType('w', encoding='UTF-8'))
+print(parser.parse_args(['--raw', 'raw.dat', 'file.txt']))
+
+parser = argparse.ArgumentParser()
+parser.add_argument('infile', type=argparse.FileType('r'))
+print(parser.parse_args(['-']))
